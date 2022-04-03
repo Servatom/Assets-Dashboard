@@ -1,9 +1,9 @@
 import {AiFillFolder} from 'react-icons/ai';
 import './Entity.css';
 
-const Folder = ({name}) =>{
+const Folder = ({name, onClick}) =>{
     return(
-        <div className="folder entity">
+        <div className="folder entity" onClick={onClick}>
             <AiFillFolder size={100} color={'#FBB624'}/>
             <span>{name}</span>
         </div>
