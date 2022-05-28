@@ -4,12 +4,17 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 10px;
     cursor: pointer;
+    flex-shrink: 1;
 }
 .file
 {
     padding: 20px 10px;
+}
+.mediaImage
+{
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .entity:hover{

@@ -1,0 +1,9 @@
+.dashboard{
+    margin: 0;
+    padding: 20px;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 40px;
+}
