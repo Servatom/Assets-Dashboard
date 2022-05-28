@@ -1,4 +1,5 @@
 .dashboard{
+    margin: 0;
     padding: 20px;
     max-width: 100vw;
     display: grid;

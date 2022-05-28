@@ -16,3 +16,22 @@ a {
   text-decoration: none;
   color: unset;
 }
+
+.footer {
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-height: 35px;
+  text-align: center;
+  background-color: rgb(29, 29, 29);
+}
+
+.footer img {
+  max-height: 30px;
+  margin: 0;
+}
+
+
