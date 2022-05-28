@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Folder from './Entities/Folder';
 import File from './Entities/File';
 import { Redirect } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Dashboard = () => {
   const URL = "https://assets.servatom.com/";
@@ -49,9 +50,7 @@ const Dashboard = () => {
             name = getName(folder.url);
             return(
                 
-                <Folder name={name} key={index} onClick = {()=>{
-                    
-                }}/>
+                <Folder name={name} key={index} />
             )
         })
       }
