@@ -4,7 +4,7 @@ import "./Dashboard.css";
 import { useEffect, useState } from "react";
 import Folder from './Entities/Folder';
 import File from './Entities/File';
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 const Dashboard = () => {
@@ -60,7 +60,9 @@ const Dashboard = () => {
             name = getName(file.url);
 
             return(
-                <File name={name} key={index}/>
+                <a href={file.url} target="_blank">
+                    <File name={name} key={index} url={file.url}/>
+                </a>
             )
         })
     }

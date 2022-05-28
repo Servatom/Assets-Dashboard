@@ -11,6 +11,11 @@
 {
     padding: 20px 10px;
 }
+.mediaImage
+{
+    max-width: 100px;
+    max-height: 100px;
+}
 
 .entity:hover{
     background-color: rgba(173, 197, 221, 0.5);
