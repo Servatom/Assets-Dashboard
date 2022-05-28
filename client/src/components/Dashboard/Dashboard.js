@@ -1,12 +1,22 @@
 import './Dashboard.css';
-import URL from '../../Url';
 import Page from '../Pages/Page';
+import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Dashboard=()=>
 {
+    const [path,setPath] = useState(useLocation().pathname || "");
+    useEffect(()=>{
+        setPath(path);
+    }, [path])
+    
+    console.log('Current path: ',path);
+    
     return(
         <div className='dashboard'>
-            <Page url={URL}/>
+            {/* <h1>Dashboard</h1> */}
+            <Page path={path} onItemClick = {setPath}/>
         </div>
     )
 }
