@@ -12,7 +12,7 @@ const File = ({name, url, onClick}) =>{
     return(
         <div className="file entity" onClick={onClick}>
             {
-                extension==='png'|| extension==='jpeg' || extension ==='jpg'?
+                extension==='png'|| extension==='jpeg' || extension ==='jpg' || extension ==='webp'?
                 <img className='mediaImage' src={url} alt={name}/>
                 :
                 <AiFillFile size={100} color={'#00C3E8'}/>
